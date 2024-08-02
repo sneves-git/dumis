@@ -7,7 +7,6 @@ function App() {
     <>
       <Navbar />
       <Carousel />
-      <div style={{ height: '100vh' }}>dasdaoshdasoh</div>
     </>
   )
 }

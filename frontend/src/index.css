@@ -24,15 +24,16 @@ h1 {
   font-weight: 700;
   letter-spacing: 1px;
   color: white;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 50px;
+  text-transform: uppercase;
+
 }
 
 h2 {
   font-weight: 100;
   font-size: 30px;
   color: white;
-  line-height: 42px;
 }
 
 h3 {
@@ -49,13 +50,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #2185d5;
+  color: white;
   cursor: pointer;
   transition: border-color 0.25s;
+  text-transform: uppercase;
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: white;
+  background-color: transparent;
 }
 
 button:focus,
@@ -66,9 +70,4 @@ button:focus-visible {
 ul {
   list-style: none;
   padding: 0;
-}
-
-/* TODO: MOVE THIS */
-.control-arrow:hover {
-  background: transparent;
 }
