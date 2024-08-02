@@ -1,6 +1,5 @@
 .carousel-slide {
     height: 100vh;
-    width: 100vW;
     position: relative;
 }
 
@@ -27,9 +26,22 @@
 .carousel-slide-content h1 {
     width: 35%;
     margin: 0;
+    color: white;
 
 }
 
 .carousel-slide-content h2 {
     width: 40%;
+    color: white;
+
+}
+
+.carousel-slide-content button {
+    transition: border-color 0.5s, background-color 0.5s;
+}
+
+
+.carousel-slide-content button:hover {
+    border-color: white;
+    background-color: transparent;
 }

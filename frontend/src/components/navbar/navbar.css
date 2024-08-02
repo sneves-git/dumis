@@ -1,10 +1,11 @@
 .navbar {
     width: 100%;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: end;
     padding-top: 2%;
-    padding-bottom: 3%;
     z-index: 1;
 }
 
@@ -15,6 +16,16 @@
     padding: 0;
     gap: 30px;
     margin-right: 14%;
+}
+
+.navbar-item-list img {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 14.5%;
+    padding-top: 1%;
 }
 
 .navbar-item-list li {
@@ -28,7 +39,6 @@
     width: 0;
     left: 50%;
     height: 2px;
-    background: blue;
     transition: width 0.3s, left 0.3s;
     background-color: #2185d5;
 }
