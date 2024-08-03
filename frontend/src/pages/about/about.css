@@ -1,27 +1,6 @@
-.about {
-    width: 100%;
-    background-color: white;
+#quem-somos {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-
-.about h2 {
-    color: #444;
-    text-align: center;
-}
-
-.about h2::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 7%;
-    height: 2px;
-    background-color: #2185d5;
-    margin-top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    flex-direction: column;
 }

@@ -1,16 +1,25 @@
 import "./navbar.css";
 import logo from "../../assets/images/logo_small.png";
+import { useEffect } from "react";
 
 export default function Navbar() {
 
-    window.onload = function () {
+    useEffect(() => {
         let aTags = document.querySelectorAll(".navbar-item-list a");
-        (aTags[0] as HTMLElement).style.color = "#2185d5";
-    }
+        (aTags[0] as HTMLElement).style.color = "white";
+        (aTags[0] as HTMLElement).style.position = "relative";
+        (aTags[0] as HTMLElement).style.display = "block";
+        (aTags[0] as HTMLElement).style.paddingBottom = "5px";
+        (aTags[0] as HTMLElement).style.borderBottom = "2px solid rgb(33, 133, 213)";
+        (aTags[0] as HTMLElement).style.height = "2px;";
+
+    }, []);
 
     window.onscroll = function () {
+        let sections = document.querySelectorAll("section");
+
         // when scrolling past half the window height, make the navbar fixed and white
-        if (document.documentElement.scrollTop > window.innerHeight / 2) {
+        if (document.documentElement.scrollTop > 2 * window.innerHeight / 3) {
             (document.querySelector(".navbar") as HTMLElement).style.position = "fixed";
             (document.querySelector(".navbar") as HTMLElement).style.backgroundColor = "white";
             let aTags = document.querySelectorAll(".navbar-item-list a");
@@ -22,34 +31,32 @@ export default function Navbar() {
             (document.querySelector(".navbar") as HTMLElement).style.backgroundColor = "transparent";
             let aTags = document.querySelectorAll(".navbar-item-list a");
             for (let i = 0; i < aTags.length; i++) {
-                (aTags[i] as HTMLElement).style.color = "gray";
+                (aTags[i] as HTMLElement).style.color = "rgba(255, 255, 255, 0.50)";
             }
         }
 
         // when scrolling past each section, highlight the corresponding link in the navbar, 
-        // if non bound client rect is in view set the first link to red
-        let sections = document.querySelectorAll("section");
+        // if non bound client rect is in view set the first link to #2185d5
         let aTags = document.querySelectorAll(".navbar-item-list a");
-        let found = false;
         for (let i = 0; i < sections.length; i++) {
             if (sections[i].getBoundingClientRect().top < window.innerHeight / 2 && sections[i].getBoundingClientRect().bottom > window.innerHeight / 2) {
-                (aTags[i] as HTMLElement).style.color = "#2185d5";
-                found = true;
-            } else {
-                (aTags[i] as HTMLElement).style.color = "gray";
+                if (i == 0) {
+                    (aTags[i] as HTMLElement).style.color = "white";
+                } else {
+                    (aTags[i] as HTMLElement).style.color = "rgb(33, 133, 213)";
+                }
             }
         }
-        if (!found) {
-            (aTags[0] as HTMLElement).style.color = "#2185d5";
-        }
+
 
         // if rect bound client is selected, set the ::after behavior to happen
         for (let i = 0; i < aTags.length; i++) {
-            if ((aTags[i] as HTMLElement).style.color === "#2185d5") {
+            if ((aTags[i] as HTMLElement).style.color === "rgb(33, 133, 213)" || (aTags[i] as HTMLElement).style.color === "white") {
                 (aTags[i] as HTMLElement).style.position = "relative";
-                (aTags[i] as HTMLElement).style.display = "inline-block";
+                (aTags[i] as HTMLElement).style.display = "block";
                 (aTags[i] as HTMLElement).style.paddingBottom = "5px";
-                (aTags[i] as HTMLElement).style.borderBottom = "2px solid #2185d5";
+                (aTags[i] as HTMLElement).style.borderBottom = "2px solid rgb(33, 133, 213)";
+                (aTags[i] as HTMLElement).style.height = "2px;";
             } else {
                 (aTags[i] as HTMLElement).style.borderBottom = "none";
             }

@@ -1,0 +1,24 @@
+.section-header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    word-wrap: break-word;
+
+}
+
+.section-header h2 {
+    color: #444;
+}
+
+.section-header h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 2px;
+    background-color: #2185d5;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
