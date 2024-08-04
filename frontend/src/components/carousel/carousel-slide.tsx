@@ -21,7 +21,7 @@ export default function Component(props: CarouselSlideProps) {
             <div className="carousel-slide-content">
                 <h1>{props.title}</h1>
                 <h2>{props.subtitle}</h2>
-                <button>{props.buttonTitle}</button>
+                <a href="#contactos"><button>{props.buttonTitle}</button></a>
             </div>
         </div>
     )

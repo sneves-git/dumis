@@ -16,10 +16,8 @@ export default function Navbar() {
     }, []);
 
     window.onscroll = function () {
-        let sections = document.querySelectorAll("section");
-
         // when scrolling past half the window height, make the navbar fixed and white
-        if (document.documentElement.scrollTop > 2 * window.innerHeight / 3) {
+        if (document.documentElement.scrollTop > window.innerHeight / 2) {
             (document.querySelector(".navbar") as HTMLElement).style.position = "fixed";
             (document.querySelector(".navbar") as HTMLElement).style.backgroundColor = "white";
             let aTags = document.querySelectorAll(".navbar-item-list a");
@@ -37,6 +35,7 @@ export default function Navbar() {
 
         // when scrolling past each section, highlight the corresponding link in the navbar, 
         // if non bound client rect is in view set the first link to #2185d5
+        let sections = document.querySelectorAll("section");
         let aTags = document.querySelectorAll(".navbar-item-list a");
         for (let i = 0; i < sections.length; i++) {
             if (sections[i].getBoundingClientRect().top < window.innerHeight / 2 && sections[i].getBoundingClientRect().bottom > window.innerHeight / 2) {

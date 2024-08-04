@@ -1,10 +1,9 @@
 .section-header {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     text-align: center;
     word-wrap: break-word;
-
 }
 
 .section-header h2 {
