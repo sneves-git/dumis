@@ -27,22 +27,20 @@ export default function About() {
     return (
         <section id="quem-somos">
             <Title title={titleProps.title} subtitle={titleProps.subtitle} />
-            <div className="row">
+            <div className="about-row">
                 <img src={team} alt="equipa" ></img>
-                <div className="margin-left">
+                <div className="about-column">
                     <h2>Somos Pioneiros</h2>
                     <h3>
                         Somos uma empresa ao vosso serviço desde 1997, pioneiros em Leiria de Instalações de Gás Natural
                         para que esse possa chegar da CCG até aos vossos lares, comercio e industrias. Fazemos
                         canalizações instalações de Gás, ligações e reconversões de aparelho a Gás, reparações de
-                        aparelhos a Gás. Pode ainda usufruir das nos parcerias com entidades inspetoras, para realizar
-                        inspeção obrigatória. Parcerias para aquisição de Eletrodomésticos, e caldeiras a Gás.
+                        aparelhos a Gás. Pode ainda usufruir das nossas parcerias com entidades inspetoras, para realizar
+                        inspeção obrigatória. Parcerias para aquisição de Eletrodomésticos e caldeiras a Gás.
                     </h3>
                     <a href="#contactos"><button>Solicite-nos um orçamento</button></a>
                 </div>
             </div>
-            <div style={{ height: "1000px" }}>sas</div>
-
         </section>
     )
 }

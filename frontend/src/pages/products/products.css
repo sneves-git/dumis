@@ -1,0 +1,21 @@
+#serviços-e-produtos {
+    background-color: #f9f6f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 6%
+}
+
+
+#serviços-e-produtos .product-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 50px;
+}

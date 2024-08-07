@@ -1,0 +1,36 @@
+.product-row {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 40%;
+    box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+
+.product-row .product-column {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 80%;
+}
+
+
+.product-row .product-column h2 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #444;
+}
+
+.product-row .product-column h3 {
+    font-size: medium;
+    color: #7f7f7f;
+}
+
+.product-row .product-column button {
+    font-size: small;
+}
+
+/* make image do a perfect square */
+.product-row img {
+    overflow: hidden;
+}

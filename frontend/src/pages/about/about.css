@@ -3,33 +3,35 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 6%
 }
 
-#quem-somos .row {
+#quem-somos .about-row {
     display: flex;
     flex-direction: row;
-    margin-left: 15%;
-    margin-top: 3%;
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
 
 }
 
-#quem-somos .row img {
+#quem-somos .about-row img {
     width: 50%;
     height: 50%;
+    margin-right: 3%;
 }
 
-#quem-somos .row .margin-left {
-    margin-top: 0%;
+
+#quem-somos .about-row .about-column {
     margin-left: 3%;
-    margin-right: 15%;
-    margin-bottom: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: justify;
 }
 
-#quem-somos .row .margin-left h2 {
+#quem-somos .about-row .about-column h2 {
     color: #000;
     margin-top: 0%;
 }
