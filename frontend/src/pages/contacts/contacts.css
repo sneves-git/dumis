@@ -1,0 +1,9 @@
+#contactos {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 6%
+}

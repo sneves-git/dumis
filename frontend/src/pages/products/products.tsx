@@ -35,8 +35,6 @@ export default function Component() {
                     <Product {...product} key={product.title} />
                 ))}
             </div>
-            <div style={{ height: "1000px" }}></div>
-
         </section>
     )
 }
