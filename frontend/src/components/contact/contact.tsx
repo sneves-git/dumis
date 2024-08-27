@@ -11,13 +11,19 @@ export default function Component({ icon, iconBackgroundColor, title, ...props }
 
     return (
         <div className="container">
-            <div className="icon" style={{ backgroundColor: iconBackgroundColor }}>
-                {icon}
+            <div className="icon-container">
+                <div className="icon" style={{ backgroundColor: iconBackgroundColor }}>
+                    {icon}
+
+                </div>
             </div>
-            <div className="title">
-                {title}
+            <div className="info">
+                <div style={{ height: 50 }}></div>
+                <div className="title">
+                    {title}
+                </div>
+                {props.children}
             </div>
-            {props.children}
         </div>
     )
 }
